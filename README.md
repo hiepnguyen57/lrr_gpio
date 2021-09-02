@@ -1,4 +1,4 @@
-# Create lora gpio shared library:
+# Create lrr_gpio shared library:
 - Run command to build:
     ```sh
     cd liblrrgpio
@@ -33,12 +33,12 @@
 
 - Okay, you can do anything with requested pin:
     ```
-    lrr_gpio_setInputMode
-    lrr_gpio_setOutputMode
-    lrr_gpio_pullUpDnControl
-    lrr_gpio_digitalRead
-    lrr_gpio_digitalWrite
-    lrr_gpio_registerISR
+    lrr_gpio_set_input_mode
+    lrr_gpio_set_output_mode
+    lrr_gpio_pud_control
+    lrr_gpio_digital_read
+    lrr_gpio_digital_write
+    lrr_gpio_register_irq
     ```
 
 - Finally, remember free gpio after using:
@@ -46,7 +46,7 @@
     lrr_gpio_free(pin)
     ```
 
-Read `loraradio_gpio.h` for more detail.
+Read `lrr_gpio.h` for more detail.
 
 # Testing:
 List of options for application:
